@@ -1,3 +1,10 @@
+## The following funcion to create a special "matrix" to
+
+## 1  set the value of the matrix
+## 2. get the value of the matrix
+## 3. set the value of the inverse
+## 4. get the value of the inverse
+
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
   set <- function(y) {
@@ -12,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## computing the inverse of the special matrix returned by above function
+## The function below compute the inverse of the special "matrix" returned by 'makeCacheMatrix' function above
 
 cacheSolve <- function(x, ...) {
   i <- x$getinverse()
